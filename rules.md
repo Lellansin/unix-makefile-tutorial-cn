@@ -2,7 +2,7 @@
 
 Makefile 目标规则的一般语法形式 -
 
-```
+```makefile
 target [target...] : [dependent ....]
     [ command ...]
 ```
@@ -11,7 +11,7 @@ target [target...] : [dependent ....]
 
 下面给出一个简单的例子，您可以定义一个规则，使得 `make` 可以通过其他三个文件来达成目标 hello。
 
-```
+```makefile
 hello: main.o factorial.o hello.o
     $(CC) main.o factorial.o hello.o -o hello
 ```
@@ -22,16 +22,16 @@ hello: main.o factorial.o hello.o
 
 如果任何命令返回失败状态，则 `make`过程终止。这也是为什么你需要常备这种规则 -
 
-```
+```makefile
 clean:
     -rm *.o *~ core paper
 ```
 
-`make`忽略以短划线开头的命令返回状态。Em，我想你可以把` - `当做是 Makefile 的行注释。
+`make`忽略以短划线开头的命令返回状态。Em，我想你可以把`-`当做是 Makefile 的行注释。
 
 `make`会输出宏替换之后的命令，来向你展示正在执行的情况。有时你可能想关闭它。例如 -
 
-```
+```makefile
 install:
     @echo You must be root to install
 ```
@@ -48,7 +48,7 @@ install:
 
 这个命令应该可以在所有情况下使用，适用于我们从源文件 x.cpp 中构建可执行文件 x 作为输出，所以可以说是一个隐含的规则 -
 
-```
+```makefile
 .cpp:
     $(CC) $(CFLAGS) $@.cpp $(LDFLAGS) -o $@
 ```
@@ -57,7 +57,7 @@ install:
 
 另一个常见的隐含规则是用 .cpp（源文件）构建 .o（对象）文件。
 
-```
+```makefile
 .cpp.o:
         $(CC) $(CFLAGS) -c $<
 
