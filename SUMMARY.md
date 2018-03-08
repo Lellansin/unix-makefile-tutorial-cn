@@ -5,4 +5,5 @@
 * [快速开始](./quickly.md)
 * [宏](hong.md)
 * [依赖关系](dependencies.md)
+* [规则](rules.md)
 
