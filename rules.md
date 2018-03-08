@@ -1,4 +1,4 @@
-# 在Makefile中定义规则
+# 在 Makefile 中定义规则
 
 Makefile 目标规则的一般语法形式 -
 
