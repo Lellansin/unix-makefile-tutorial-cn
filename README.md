@@ -1,6 +1,6 @@
 # Unix Makefile 教程
 
-Tutorials point [Unix Makefile tutorial](https://www.tutorialspoint.com/makefile/index.htm) 中文版翻译。
+Tutorials Point [Unix Makefile tutorial](https://www.tutorialspoint.com/makefile/index.htm) 中文版翻译。
 
 ## Join us
 
