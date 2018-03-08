@@ -1,3 +1,5 @@
+# 宏
+
 `make` 允许你使用类似变量的宏。宏在 Makefile 中使用 名称 = 值 的形式来定义。例如
 
 ```makefile
@@ -21,12 +23,12 @@ MYFACE  = ":*)"
 
 ```makefile
 hello: main.cpp hello.cpp factorial.cpp
-	$(CC) $(CFLAGS) $? $(LDFLAGS) -o $@
+    $(CC) $(CFLAGS) $? $(LDFLAGS) -o $@
 
 或者 −
 
 hello: main.cpp hello.cpp factorial.cpp
-	$(CC) $(CFLAGS) $@.cpp $(LDFLAGS) -o $@
+    $(CC) $(CFLAGS) $@.cpp $(LDFLAGS) -o $@
 ```
 
 在这个例子中，像 $\(CC\) $\(CFLAGS\) $? $\(LDFLAGS\) -o $@ 这样的操作行应该在行首输入一个制表符 \(\t\) ，否则 make 会报错。 其中的 $@ 代表 hello 同时 $? 或者 $@.cpp 则代表所有已修改源文件。
@@ -41,12 +43,12 @@ hello: main.cpp hello.cpp factorial.cpp
 
 ```makefile
 .cpp.o:
-	$(CC) $(CFLAGS) -c $<
+    $(CC) $(CFLAGS) -c $<
 
 或者 −
 
 .cpp.o:
-	$(CC) $(CFLAGS) -c $*.c
+    $(CC) $(CFLAGS) -c $*.c
 ```
 
 ## 常规宏
