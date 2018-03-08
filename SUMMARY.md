@@ -7,4 +7,5 @@
 * [依赖关系](dependencies.md)
 * [规则](rules.md)
 * [自定义后缀规则](suffixrules.md)
+* [指令](directives.md)
 
