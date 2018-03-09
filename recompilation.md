@@ -1,4 +1,4 @@
-# 重新编译
+# Makefile - 重新编译
 
 实际上`make`是一个智能的工具，它可以基于你在源文件中所做的更改而选择性的生效。如果你有四个文件 main.cpp、hello.cpp、factorial.cpp 和 functions.h，那么（由于顺序的原因）所有其余文件都依赖于 functions.h，而 main.cpp 依赖于 hello.cpp 和 factorial.cpp。因此，如果您在 functions.h 中进行了任何更改，则`make`会重新编译所有源文件以生成新的目标文件。但是，如果您在 main.cpp 中进行任何更改，因为它不被任何其他文件依赖，所以只会重新编译 main.cpp 文件，而 help.cpp 和 factorial.cpp 则不会。
 
