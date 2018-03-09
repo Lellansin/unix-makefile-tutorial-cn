@@ -6,7 +6,7 @@
 * [宏](hong.md)
 * [依赖关系](dependencies.md)
 * [规则](rules.md)
-* [自定义后缀规则](suffixrules.md)
+* [Makefile - 自定义后缀规则](suffixrules.md)
 * [Makefile - 指令](directives.md)
 * [Makefile - 重新编译](recompilation.md)
 * [Makefile - 其他特性](other-features.md)
