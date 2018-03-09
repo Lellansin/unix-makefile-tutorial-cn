@@ -1,4 +1,5 @@
 # 为什么我们需要 Makefile?
+
 手动编译源代码文件很麻烦，特别是当你要编译多个源文件，并切每次编译都要重复输入编译命令的时候。而 Makefiles 正是为了简化这个过程的一个工具。
 
 首先你需要了解 Makefiles 是一种特殊格式的文件，可帮助自动构建和管理项目。
@@ -10,7 +11,8 @@
 * factorial.cpp
 * functions.h
 
-*main.cpp中*
+_main.cpp中_
+
 ```cpp
 #include <iostream>
 
@@ -26,7 +28,8 @@ int main(){
 }
 ```
 
-*hello.cpp*
+_hello.cpp_
+
 ```cpp
 #include <iostream>
 
@@ -39,7 +42,8 @@ void print_hello(){
 }
 ```
 
-factorial.cpp
+_factorial.cpp_
+
 ```cpp
 #include "functions.h"
 
@@ -52,7 +56,8 @@ int factorial(int n){
 }
 ```
 
-functions.h
+_functions.h_
+
 ```cpp
 void print_hello();
 int factorial(int n);
