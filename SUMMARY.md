@@ -10,4 +10,5 @@
 * [指令](directives.md)
 * [重新编译](recompilation.md)
 * [其他特性](other-features.md)
+* [Makefile - 例子](example.md)
 
