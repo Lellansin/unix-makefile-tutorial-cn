@@ -1,4 +1,4 @@
-# 其他特性
+# Makefile - 其他特性
 
 ## 递归使用Make
 
@@ -9,7 +9,7 @@ subsystem:
         cd subdir && $(MAKE)
 
 或者，等效的 −
- 	
+
 subsystem:
         $(MAKE) -C subdir
 ```
@@ -57,7 +57,6 @@ hello: ${OBJ}
    ${CC} ${CFLAGS} ${INCLUDES} -o $@ ${OBJS} ${LIBS}
 .cpp.o:
    ${CC} ${CFLAGS} ${INCLUDES} -c $<
-
 ```
 
 ## 将更多文本附加到变量
@@ -90,7 +89,7 @@ objects := $(objects) another.o
 
 ```
 OBJ =  main.o factorial.o \
-	hello.o
+    hello.o
 
 
 等同于
