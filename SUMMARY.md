@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [简介](./intro.md)
+* [Makefile - 简介](./intro.md)
 * [Makefile - 快速开始](./quickly.md)
 * [Makefile - 宏](hong.md)
 * [Makefile - 依赖关系](dependencies.md)
