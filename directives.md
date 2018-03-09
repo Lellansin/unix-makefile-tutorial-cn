@@ -1,4 +1,4 @@
-# 指令
+# Makefile - 指令
 
 有许多可用于各种形式的指令（Directives）。你系统上的`make`程序可能不支持所有的指令。所以请检查你的`make`是否支持我们在这里解释的指令。本教程中的指令均源自 GNU`make`。
 
@@ -49,7 +49,7 @@ ifeq (arg1, arg2)
 ifeq 'arg1' 'arg2'
 ifeq "arg1" "arg2"
 ifeq "arg1" 'arg2'
-ifeq 'arg1' "arg2" 
+ifeq 'arg1' "arg2"
 ```
 
 以上条件的相反指令如下 -
@@ -59,7 +59,7 @@ ifneq (arg1, arg2)
 ifneq 'arg1' 'arg2'
 ifneq "arg1" "arg2"
 ifneq "arg1" 'arg2'
-ifneq 'arg1' "arg2" 
+ifneq 'arg1' "arg2"
 ```
 
 ## 条件指令示例
