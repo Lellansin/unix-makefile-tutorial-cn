@@ -1,8 +1,8 @@
 # Makefile - 其他特性
 
-## 递归使用Make
+## 递归使用 make
 
-递归使用`make`的方式即在 Makefile 中将`make`用作命令。这个用法的主要用途是将一个大系统的拆成多个子系统i组合编译时。比如说，你有一个名为 \`subdir' 的子目录，它有自己的 Makefile，并且您希望在包含 Makefile 的子目录上运行 make。那么可以通过这个来做到这一点 -
+递归使用 `make` 的方式即在 Makefile 中将 `make` 用作命令。这个用法的主要用途是将一个大系统的拆成多个子系统i组合编译时。比如说，你有一个名为 \`subdir' 的子目录，它有自己的 Makefile，并且您希望在包含 Makefile 的子目录上运行 make。那么可以通过这个来做到这一点 -
 
 ```
 subsystem:

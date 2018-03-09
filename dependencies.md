@@ -1,15 +1,15 @@
 # Makefile - 依赖关系
 
-最后构建得到的二进制文件依赖于各种源代码和头文件是很常见的。依赖关系很重要，因为它们让`make`知道的任何执行**目标**的依赖。考虑下面的例子 -
+最后构建得到的二进制文件依赖于各种源代码和头文件是很常见的。依赖关系很重要，因为它们让 `make` 知道的任何执行**目标**的依赖。考虑下面的例子 -
 
 ```makefile
 hello: main.o factorial.o hello.o
     $(CC) main.o factorial.o hello.o -o hello
 ```
 
-其中，hello 为 make 的一个目标（target），而 hello 这个**目标**达成依赖于 main.o，factorial.o 和 hello.o 三个依赖（每个依赖都是另一个目标/文件）。因此，不论哪个依赖的目标发生了变化后，`make`都会采取行动来重新（执行命令来）达到**目标**（即重新执行 `$(CC) main.o factorial.o hello.o -o hello`）。
+其中，hello 为 make 的一个目标（target），而 hello 这个**目标**达成依赖于 main.o，factorial.o 和 hello.o 三个依赖（每个依赖都是另一个目标/文件）。因此，不论哪个依赖的目标发生了变化后， `make` 都会采取行动来重新（执行命令来）达到**目标**（即重新执行 `$(CC) main.o factorial.o hello.o -o hello`）。
 
-同时，我们需要告诉`make`如何准备 .o 文件（即 hello 依赖的三个目标/文件）。因此我们需要定义这些依赖关系如下 -
+同时，我们需要告诉 `make` 如何准备 .o 文件（即 hello 依赖的三个目标/文件）。因此我们需要定义这些依赖关系如下 -
 
 ```makefile
 main.o: main.cpp functions.h

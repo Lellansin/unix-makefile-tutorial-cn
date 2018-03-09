@@ -13,9 +13,9 @@ main.o: functions.h
 factorial.o: functions.h 
 ```
 
-`make`使用名为 .SUFFIXES 的特殊目标来允许您定义自己的后缀。例如  -
+`make` 使用名为 .SUFFIXES 的特殊目标来允许您定义自己的后缀。例如  -
 
-```
+```makefile
 .SUFFIXES: .foo .bar
 ```
 
@@ -23,7 +23,7 @@ factorial.o: functions.h
 
 与`make`已知如何从 .c 文件创建 .o 文件类似，您可以按以下方式定义规则 -
 
-```
+```makefile
 .foo.bar:
         tr '[A-Z][a-z]' '[N-Z][A-M][n-z][a-m]' < $< > $@
 .c.o:
