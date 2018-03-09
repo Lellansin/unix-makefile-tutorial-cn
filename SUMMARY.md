@@ -8,4 +8,5 @@
 * [规则](rules.md)
 * [自定义后缀规则](suffixrules.md)
 * [指令](directives.md)
+* [重新编译](recompilation.md)
 
